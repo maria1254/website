@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <
+</head>
+<body>
+
+   <img class="fimage"  src="1Fimage.png"  alt="" height=100% width=100%>
+   <h3>詳しい現在地を選択してください</h3>
+  
+
+    <select name="selectmenu">
+        <option value="#a1">１　カフェテリア</option>
+        <option value="#a2">２　図書館</option>
+        <option value="#a3">３　作法室</option>
+        <option value="#a4">４　美術室</option>
+        <option value="#a5">５　国語室</option>
+      </select>
+
+
+      <script>
+        let select = document.querySelector('[name="selectmenu"]');
+        select.onchange = event => { 
+          var adjust = 0;
+          var speed = 400;
+          var href = select.value;
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top + adjust;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        };
+        </script>
+
+
+    
+</body>
+</html>
