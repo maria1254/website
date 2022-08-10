@@ -33,9 +33,9 @@ h1{
 
 .globalNabi li{
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 220px;
     font-family: 'Oswald', sans-serif;
-    font-size:45px;
+    font-size:30px;
     letter-spacing: 1px;
   
 }
@@ -46,7 +46,7 @@ h1{
 
 .globalNabi a{
 
-color:dimgrey;
+color:rgb(0, 0, 0);
 
 }
 
@@ -121,6 +121,7 @@ h2{
 
 .sakuseisya p{
     text-align: center;  
+    font-size:30px;
 }
 
 .news2 h2{
